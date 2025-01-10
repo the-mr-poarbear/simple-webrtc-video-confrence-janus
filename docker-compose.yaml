@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  janus:
+    image: canyan/janus-gateway
+    container_name: janus
+    ports:
+      - "8188:8188"
+    restart: unless-stopped
